@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlterarUsuarioFragment">
+
+
+    <EditText
+        android:id="@+id/editTextAtualizaId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="57dp"
+        android:ems="10"
+        android:hint="id"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAtualizaNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="nome"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextAtualizaId"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAtualizaId" />
+
+    <EditText
+        android:id="@+id/editTextAtualizaEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="e-mail"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextAtualizaNome"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAtualizaNome" />
+
+    <Button
+        android:id="@+id/buttonAtualizaUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="64dp"
+        android:text="Atualizar Usuário"
+        app:layout_constraintStart_toStartOf="@+id/editTextAtualizaEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAtualizaEmail" />
+</android.support.constraint.ConstraintLayout>
